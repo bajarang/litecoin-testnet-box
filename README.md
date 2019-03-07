@@ -2,6 +2,10 @@ This is a private, difficulty 1, testnet-in-a-box for [Litecoin](https://litecoi
 
 Use it as follows:
 
+Without docker :
+----------------
+    $ git clone -b modifyMakefile git@github.com:bajarang/litecoin-testnet-box
+    $ cd litecoin-testnet-box/
     $ make start
     litecoind -datadir=1  -daemon
     Litecoin server starting
