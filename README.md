@@ -65,7 +65,7 @@ To get the address the mined coins will end up in, run:
 
 That will query just the first node, as that is the one receiving the mining rewards.
 
-<---
+<!---
 # Mining with `cgminer`
 
     ./cgminer --scrypt -o http://127.0.0.1:19334 -O testnet:testnet --shaders 2048 --thread-concurrency 8192 -w 256 -g2 -I 13 --auto-gpu --temp-overheat 81 --gpu-vddc 1.030 --temp-cutoff 97 --gpu-fan=100 --gpu-engine 700-1000 --gpu-memclock 1500
