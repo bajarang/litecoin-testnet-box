@@ -1,29 +1,35 @@
 LITECOIND=litecoind
+LITECOINGUI=litecoin-qt
+LITECOINCLI=litecoin-cli
 S1_FLAGS=
 S2_FLAGS=
-S1=$(LITECOIND) -datadir=1 $(S1_FLAGS)
-S2=$(LITECOIND) -datadir=2 $(S2_FLAGS)
+S1=-datadir=1 $(S1_FLAGS)
+S2=-datadir=2 $(S2_FLAGS)
+BLOCKS=1
+ADDRESS=
+AMOUNT=
+ACCOUNT=
 
 start:
-	$(S1) -daemon
-	$(S2) -daemon
+	$(LITECOIND) $(S1) -daemon
+	$(LITECOIND) $(S2) -daemon
 	
 generate-true:
-	$(S1) setgenerate true
+	$(LITECOINCLI) $(S1) generate $(BLOCKS)
 	
 generate-false:
-	$(S1) setgenerate false
+	$(LITECOINCLI) $(S1) generate false
 	
 getinfo:
-	$(S1) getinfo
-	$(S2) getinfo
+	$(LITECOINCLI) $(S1) -getinfo
+	$(LITECOINCLI) $(S2) -getinfo
 	
 getaccountaddress:
-	$(S1) getaccountaddress ""
+	$(LITECOINCLI) $(S1) getaccountaddress ""
 
 stop:
-	$(S1) stop
-	$(S2) stop
+	$(LITECOINCLI) $(S1) stop
+	$(LITECOINCLI) $(S2) stop
 
 clean:
 	rm -rf 1/testnet*
