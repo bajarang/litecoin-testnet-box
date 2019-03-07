@@ -132,3 +132,6 @@ The secondary node is listening for RPC connections on port 19343 (but it will n
 
 When running & generating coin - remember that you'll need the coins to mature before you can use them in a transaction.
 
+With docker (in-progress) :
+--------------------------
+
