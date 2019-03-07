@@ -3,6 +3,10 @@ This is a private, difficulty 1, testnet-in-a-box for [Litecoin](https://litecoi
 Use it as follows:
 
     $ make start
+    litecoind -datadir=1  -daemon
+    Litecoin server starting
+    litecoind -datadir=2  -daemon
+    Litecoin server starting
 
 This will start two nodes. You need two because otherwise the node won't
 generate blocks. You now have a private testnet:
