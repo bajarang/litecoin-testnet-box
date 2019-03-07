@@ -12,42 +12,42 @@ This will start two nodes. You need two because otherwise the node won't
 generate blocks. You now have a private testnet:
 
     $ make getinfo
-    litecoind -datadir=1  getinfo
+    litecoin-cli -datadir=1  -getinfo
     {
-        "version" : 60300,
-        "protocolversion" : 60001,
-        "walletversion" : 60000,
-        "balance" : 0.00000000,
-        "blocks" : 0,
-        "connections" : 1,
-        "proxy" : "",
-        "difficulty" : 0.00024414,
-        "testnet" : true,
-        "keypoololdest" : 1367704943,
-        "keypoolsize" : 101,
-        "paytxfee" : 0.00000000,
-        "mininput" : 0.00010000,
-        "errors" : ""
+      "version": 170100,
+      "protocolversion": 70015,
+      "walletversion": 169900,
+      "balance": 0.00000000,
+      "blocks": 1004961,
+      "timeoffset": 0,
+      "connections": 8,
+      "proxy": "",
+      "difficulty": 0.0417876053377951,
+      "testnet": true,
+      "keypoololdest": 1551943572,
+      "keypoolsize": 1000,
+      "paytxfee": 0.00000000,
+      "relayfee": 0.00001000,
+      "warnings": ""
     }
-    
-    litecoind -datadir=2  getinfo
+    litecoin-cli -datadir=2  -getinfo
     {
-        "version" : 60300,
-        "protocolversion" : 60001,
-        "walletversion" : 60000,
-        "balance" : 0.00000000,
-        "blocks" : 0,
-        "connections" : 1,
-        "proxy" : "",
-        "difficulty" : 0.00024414,
-        "testnet" : true,
-        "keypoololdest" : 1367704943,
-        "keypoolsize" : 101,
-        "paytxfee" : 0.00000000,
-        "mininput" : 0.00010000,
-        "errors" : ""
+      "version": 170100,
+      "protocolversion": 70015,
+      "walletversion": 169900,
+      "balance": 0.00000000,
+      "blocks": 1004961,
+      "timeoffset": 0,
+      "connections": 8,
+      "proxy": "",
+      "difficulty": 0.0417876053377951,
+      "testnet": true,
+      "keypoololdest": 1551943572,
+      "keypoolsize": 1000,
+      "paytxfee": 0.00000000,
+      "relayfee": 0.00001000,
+      "warnings": ""
     }
-
 
 To start generating blocks:
 
