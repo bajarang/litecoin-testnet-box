@@ -112,7 +112,7 @@ Change `127.0.0.1` in the command to the IP of the testnet box if not running on
     [2013-05-05 08:09:02] Accepted 0da16004 Diff 18/16 BLOCK! GPU 0
     [2013-05-05 08:09:03] New block detected on network
   
---> 
+---> 
 
 To stop the two nodes:
   
