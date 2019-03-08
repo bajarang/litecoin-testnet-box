@@ -132,6 +132,15 @@ The secondary node is listening for RPC connections on port 19343 (but it will n
 
 When running & generating coin - remember that you'll need the coins to mature before you can use them in a transaction.
 
-With docker (in-progress) :
---------------------------
+With docker :
+------------
+
+The provided dockerfile installs litecoid-core and makes docker image litecoin-testnet-box available.
+Build the image using :
+    $ docker build -t litecoin-testnet-box .
+    $ docker ps
+
+Create a container running two accounts 1 and 2 using :
+    $ docker run -t -i -p 19334:19334 -p 19344:19344 litecoin-testnet-box
+
 
