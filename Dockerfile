@@ -2,7 +2,8 @@
 
 # Ubuntu 14.04 LTS (Trusty Tahr)
 FROM ubuntu:14.04
-LABEL maintainer="Bajarang Sutar <bajarang.sutar@gmail.com>"
+LABEL maintainer0="Bajarang Sutar <bajarang.sutar@gmail.com>"
+      maintainer1="Vishwas Patil <ivishwas@gmail.com>"
 
 # add bitcoind from the official PPA
 # install litecoind (from PPA) and make
