@@ -139,7 +139,7 @@ The provided dockerfile installs litecoid-core and makes docker image litecoin-t
 Build the image using :
 
     $ docker build -t litecoin-testnet-box .
-    $ docker ps
+    $ docker images
 
 Create a container running two accounts 1 and 2 using :
 
